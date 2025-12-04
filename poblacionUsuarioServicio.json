@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "692e799c130abab083c5f258"
+  },
+  "cedula": "2000000",
+  "nombre": "Conductor0",
+  "email": "conductor0@email.com",
+  "celular": "+573000000000"
+},
+{
+  "_id": {
+    "$oid": "692e799c130abab083c5f259"
+  },
+  "cedula": "2000001",
+  "nombre": "Conductor1",
+  "email": "conductor1@email.com",
+  "celular": "+573000000001"
+},
+{
+  "_id": {
+    "$oid": "692e799c130abab083c5f25a"
+  },
+  "cedula": "2000002",
+  "nombre": "Conductor2",
+  "email": "conductor2@email.com",
+  "celular": "+573000000002"
+},
+{
+  "_id": {
+    "$oid": "692e799c130abab083c5f25b"
+  },
+  "cedula": "2000003",
+  "nombre": "Conductor3",
+  "email": "conductor3@email.com",
+  "celular": "+573000000003"
+},
+{
+  "_id": {
+    "$oid": "692e799c130abab083c5f25c"
+  },
+  "cedula": "2000004",
+  "nombre": "Conductor4",
+  "email": "conductor4@email.com",
+  "celular": "+573000000004"
+},
+{
+  "_id": {
+    "$oid": "692e799c130abab083c5f25d"
+  },
+  "cedula": "2000005",
+  "nombre": "Conductor5",
+  "email": "conductor5@email.com",
+  "celular": "+573000000005"
+},
+{
+  "_id": {
+    "$oid": "692e799c130abab083c5f25e"
+  },
+  "cedula": "2000006",
+  "nombre": "Conductor6",
+  "email": "conductor6@email.com",
+  "celular": "+573000000006"
+},
+{
+  "_id": {
+    "$oid": "692e799c130abab083c5f25f"
+  },
+  "cedula": "2000007",
+  "nombre": "Conductor7",
+  "email": "conductor7@email.com",
+  "celular": "+573000000007"
+},
+{
+  "_id": {
+    "$oid": "692e799c130abab083c5f260"
+  },
+  "cedula": "2000008",
+  "nombre": "Conductor8",
+  "email": "conductor8@email.com",
+  "celular": "+573000000008"
+},
+{
+  "_id": {
+    "$oid": "692e799c130abab083c5f261"
+  },
+  "cedula": "2000009",
+  "nombre": "Conductor9",
+  "email": "conductor9@email.com",
+  "celular": "+573000000009"
+}]

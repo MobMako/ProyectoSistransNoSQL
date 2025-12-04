@@ -1,0 +1,706 @@
+﻿[
+  {
+    "id": "SERV001",
+    "usuarioCedula": "1000000",
+    "conductorCedula": "2000000",
+    "vehiculoPlaca": "V1000000A",
+    "puntos": [
+      { "coordenadas": [4.60, -74.08], "direccion": "Calle 1", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 5.2,
+    "costo": 12000,
+    "fechaInicio": "2025-11-20T08:00:00",
+    "fechaFin": "2025-11-20T08:18:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV002",
+    "usuarioCedula": "1000000",
+    "conductorCedula": "2000001",
+    "vehiculoPlaca": "V1000001A",
+    "puntos": [
+      { "coordenadas": [4.61, -74.07], "direccion": "Calle 2", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 3.1,
+    "costo": 7000,
+    "fechaInicio": "2025-11-20T10:00:00",
+    "fechaFin": "2025-11-20T10:12:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV003",
+    "usuarioCedula": "1000000",
+    "conductorCedula": "2000002",
+    "vehiculoPlaca": "V1000002A",
+    "puntos": [
+      { "coordenadas": [4.62, -74.06], "direccion": "Calle 3", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 9.8,
+    "costo": 22000,
+    "fechaInicio": "2025-11-20T12:00:00",
+    "fechaFin": "2025-11-20T12:40:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV004",
+    "usuarioCedula": "1000000",
+    "conductorCedula": "2000003",
+    "vehiculoPlaca": "V1000003A",
+    "puntos": [
+      { "coordenadas": [4.63, -74.05], "direccion": "Calle 4", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 6.5,
+    "costo": 15000,
+    "fechaInicio": "2025-11-20T14:00:00",
+    "fechaFin": "2025-11-20T14:22:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV005",
+    "usuarioCedula": "1000000",
+    "conductorCedula": "2000004",
+    "vehiculoPlaca": "V1000004A",
+    "puntos": [
+      { "coordenadas": [4.64, -74.04], "direccion": "Calle 5", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 2.7,
+    "costo": 6500,
+    "fechaInicio": "2025-11-20T17:00:00",
+    "fechaFin": "2025-11-20T17:10:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV006",
+    "usuarioCedula": "1000001",
+    "conductorCedula": "2000005",
+    "vehiculoPlaca": "V1000005A",
+    "puntos": [
+      { "coordenadas": [4.58, -74.10], "direccion": "Calle 6", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 4.1,
+    "costo": 11000,
+    "fechaInicio": "2025-11-21T08:00:00",
+    "fechaFin": "2025-11-21T08:15:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV007",
+    "usuarioCedula": "1000001",
+    "conductorCedula": "2000006",
+    "vehiculoPlaca": "V1000006A",
+    "puntos": [
+      { "coordenadas": [4.57, -74.11], "direccion": "Calle 7", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 7.3,
+    "costo": 18000,
+    "fechaInicio": "2025-11-21T10:00:00",
+    "fechaFin": "2025-11-21T10:25:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV008",
+    "usuarioCedula": "1000001",
+    "conductorCedula": "2000007",
+    "vehiculoPlaca": "V1000007A",
+    "puntos": [
+      { "coordenadas": [4.56, -74.12], "direccion": "Calle 8", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 11.1,
+    "costo": 25000,
+    "fechaInicio": "2025-11-21T12:00:00",
+    "fechaFin": "2025-11-21T12:40:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV009",
+    "usuarioCedula": "1000001",
+    "conductorCedula": "2000008",
+    "vehiculoPlaca": "V1000008A",
+    "puntos": [
+      { "coordenadas": [4.55, -74.13], "direccion": "Calle 9", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 3.4,
+    "costo": 9000,
+    "fechaInicio": "2025-11-21T14:00:00",
+    "fechaFin": "2025-11-21T14:12:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV010",
+    "usuarioCedula": "1000001",
+    "conductorCedula": "2000009",
+    "vehiculoPlaca": "V1000009A",
+    "puntos": [
+      { "coordenadas": [4.54, -74.14], "direccion": "Calle 10", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 6.1,
+    "costo": 16000,
+    "fechaInicio": "2025-11-21T16:00:00",
+    "fechaFin": "2025-11-21T16:20:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV011",
+    "usuarioCedula": "1000002",
+    "conductorCedula": "2000000",
+    "vehiculoPlaca": "V1000000B",
+    "puntos": [
+      { "coordenadas": [4.60, -74.08], "direccion": "Calle 11", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 5.3,
+    "costo": 12500,
+    "fechaInicio": "2025-11-22T08:00:00",
+    "fechaFin": "2025-11-22T08:19:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV012",
+    "usuarioCedula": "1000002",
+    "conductorCedula": "2000001",
+    "vehiculoPlaca": "V1000001B",
+    "puntos": [
+      { "coordenadas": [4.61, -74.07], "direccion": "Calle 12", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 2.9,
+    "costo": 6800,
+    "fechaInicio": "2025-11-22T10:00:00",
+    "fechaFin": "2025-11-22T10:10:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV013",
+    "usuarioCedula": "1000002",
+    "conductorCedula": "2000002",
+    "vehiculoPlaca": "V1000002B",
+    "puntos": [
+      { "coordenadas": [4.62, -74.06], "direccion": "Calle 13", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 8.7,
+    "costo": 20000,
+    "fechaInicio": "2025-11-22T12:00:00",
+    "fechaFin": "2025-11-22T12:35:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV014",
+    "usuarioCedula": "1000002",
+    "conductorCedula": "2000003",
+    "vehiculoPlaca": "V1000003B",
+    "puntos": [
+      { "coordenadas": [4.63, -74.05], "direccion": "Calle 14", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 6.4,
+    "costo": 15500,
+    "fechaInicio": "2025-11-22T14:00:00",
+    "fechaFin": "2025-11-22T14:23:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV015",
+    "usuarioCedula": "1000002",
+    "conductorCedula": "2000004",
+    "vehiculoPlaca": "V1000004B",
+    "puntos": [
+      { "coordenadas": [4.64, -74.04], "direccion": "Calle 15", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 3.1,
+    "costo": 7500,
+    "fechaInicio": "2025-11-22T16:00:00",
+    "fechaFin": "2025-11-22T16:12:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV016",
+    "usuarioCedula": "1000003",
+    "conductorCedula": "2000005",
+    "vehiculoPlaca": "V1000005B",
+    "puntos": [
+      { "coordenadas": [4.58, -74.10], "direccion": "Calle 16", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 4.8,
+    "costo": 12000,
+    "fechaInicio": "2025-11-23T08:00:00",
+    "fechaFin": "2025-11-23T08:17:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV017",
+    "usuarioCedula": "1000003",
+    "conductorCedula": "2000006",
+    "vehiculoPlaca": "V1000006B",
+    "puntos": [
+      { "coordenadas": [4.57, -74.11], "direccion": "Calle 17", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 7.8,
+    "costo": 19000,
+    "fechaInicio": "2025-11-23T10:00:00",
+    "fechaFin": "2025-11-23T10:26:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV018",
+    "usuarioCedula": "1000003",
+    "conductorCedula": "2000007",
+    "vehiculoPlaca": "V1000007B",
+    "puntos": [
+      { "coordenadas": [4.56, -74.12], "direccion": "Calle 18", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 10.2,
+    "costo": 23000,
+    "fechaInicio": "2025-11-23T12:00:00",
+    "fechaFin": "2025-11-23T12:37:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV019",
+    "usuarioCedula": "1000003",
+    "conductorCedula": "2000008",
+    "vehiculoPlaca": "V1000008B",
+    "puntos": [
+      { "coordenadas": [4.55, -74.13], "direccion": "Calle 19", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 3.6,
+    "costo": 9200,
+    "fechaInicio": "2025-11-23T14:00:00",
+    "fechaFin": "2025-11-23T14:14:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV020",
+    "usuarioCedula": "1000003",
+    "conductorCedula": "2000009",
+    "vehiculoPlaca": "V1000009B",
+    "puntos": [
+      { "coordenadas": [4.54, -74.14], "direccion": "Calle 20", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 6.2,
+    "costo": 16500,
+    "fechaInicio": "2025-11-23T16:00:00",
+    "fechaFin": "2025-11-23T16:21:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV021",
+    "usuarioCedula": "1000004",
+    "conductorCedula": "2000000",
+    "vehiculoPlaca": "V1000000A",
+    "puntos": [
+      { "coordenadas": [4.53, -74.15], "direccion": "Calle 21", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 4.1,
+    "costo": 11000,
+    "fechaInicio": "2025-11-24T08:00:00",
+    "fechaFin": "2025-11-24T08:15:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV022",
+    "usuarioCedula": "1000004",
+    "conductorCedula": "2000001",
+    "vehiculoPlaca": "V1000001A",
+    "puntos": [
+      { "coordenadas": [4.52, -74.16], "direccion": "Calle 22", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 2.7,
+    "costo": 6500,
+    "fechaInicio": "2025-11-24T10:00:00",
+    "fechaFin": "2025-11-24T10:10:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV023",
+    "usuarioCedula": "1000004",
+    "conductorCedula": "2000002",
+    "vehiculoPlaca": "V1000002A",
+    "puntos": [
+      { "coordenadas": [4.51, -74.17], "direccion": "Calle 23", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 9.3,
+    "costo": 21500,
+    "fechaInicio": "2025-11-24T12:00:00",
+    "fechaFin": "2025-11-24T12:34:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV024",
+    "usuarioCedula": "1000004",
+    "conductorCedula": "2000003",
+    "vehiculoPlaca": "V1000003A",
+    "puntos": [
+      { "coordenadas": [4.50, -74.18], "direccion": "Calle 24", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 6.1,
+    "costo": 15000,
+    "fechaInicio": "2025-11-24T14:00:00",
+    "fechaFin": "2025-11-24T14:22:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV025",
+    "usuarioCedula": "1000004",
+    "conductorCedula": "2000004",
+    "vehiculoPlaca": "V1000004A",
+    "puntos": [
+      { "coordenadas": [4.49, -74.19], "direccion": "Calle 25", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 3.4,
+    "costo": 8800,
+    "fechaInicio": "2025-11-24T16:00:00",
+    "fechaFin": "2025-11-24T16:13:00",
+    "reseÃ±as": []
+  },
+
+  {
+    "id": "SERV026",
+    "usuarioCedula": "1000005",
+    "conductorCedula": "2000005",
+    "vehiculoPlaca": "V1000005A",
+    "puntos": [
+      { "coordenadas": [4.48, -74.20], "direccion": "Calle 26", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 5.1,
+    "costo": 12200,
+    "fechaInicio": "2025-11-25T08:00:00",
+    "fechaFin": "2025-11-25T08:17:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV027",
+    "usuarioCedula": "1000005",
+    "conductorCedula": "2000006",
+    "vehiculoPlaca": "V1000006A",
+    "puntos": [
+      { "coordenadas": [4.47, -74.21], "direccion": "Calle 27", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 7.5,
+    "costo": 18500,
+    "fechaInicio": "2025-11-25T10:00:00",
+    "fechaFin": "2025-11-25T10:25:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV028",
+    "usuarioCedula": "1000005",
+    "conductorCedula": "2000007",
+    "vehiculoPlaca": "V1000007A",
+    "puntos": [
+      { "coordenadas": [4.46, -74.22], "direccion": "Calle 28", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 9.9,
+    "costo": 22500,
+    "fechaInicio": "2025-11-25T12:00:00",
+    "fechaFin": "2025-11-25T12:35:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV029",
+    "usuarioCedula": "1000005",
+    "conductorCedula": "2000008",
+    "vehiculoPlaca": "V1000008A",
+    "puntos": [
+      { "coordenadas": [4.45, -74.23], "direccion": "Calle 29", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 4.1,
+    "costo": 10500,
+    "fechaInicio": "2025-11-25T14:00:00",
+    "fechaFin": "2025-11-25T14:15:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV030",
+    "usuarioCedula": "1000005",
+    "conductorCedula": "2000009",
+    "vehiculoPlaca": "V1000009A",
+    "puntos": [
+      { "coordenadas": [4.44, -74.24], "direccion": "Calle 30", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 6.8,
+    "costo": 16000,
+    "fechaInicio": "2025-11-25T16:00:00",
+    "fechaFin": "2025-11-25T16:23:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV031",
+    "usuarioCedula": "1000006",
+    "conductorCedula": "2000020",
+    "vehiculoPlaca": "V1000000B",
+    "puntos": [
+      { "coordenadas": [4.70, -74.25], "direccion": "Calle 31", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 4.9,
+    "costo": 12200,
+    "fechaInicio": "2025-11-26T08:00:00",
+    "fechaFin": "2025-11-26T08:16:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV032",
+    "usuarioCedula": "1000006",
+    "conductorCedula": "2000021",
+    "vehiculoPlaca": "V1000001B",
+    "puntos": [
+      { "coordenadas": [4.71, -74.26], "direccion": "Calle 32", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 7.2,
+    "costo": 17500,
+    "fechaInicio": "2025-11-26T10:00:00",
+    "fechaFin": "2025-11-26T10:24:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV033",
+    "usuarioCedula": "1000006",
+    "conductorCedula": "2000022",
+    "vehiculoPlaca": "V1000002B",
+    "puntos": [
+      { "coordenadas": [4.72, -74.27], "direccion": "Calle 33", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 9.8,
+    "costo": 22800,
+    "fechaInicio": "2025-11-26T12:00:00",
+    "fechaFin": "2025-11-26T12:34:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV034",
+    "usuarioCedula": "1000006",
+    "conductorCedula": "2000023",
+    "vehiculoPlaca": "V1000003B",
+    "puntos": [
+      { "coordenadas": [4.73, -74.28], "direccion": "Calle 34", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 3.9,
+    "costo": 9600,
+    "fechaInicio": "2025-11-26T14:00:00",
+    "fechaFin": "2025-11-26T14:13:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV035",
+    "usuarioCedula": "1000006",
+    "conductorCedula": "2000024",
+    "vehiculoPlaca": "V1000004B",
+    "puntos": [
+      { "coordenadas": [4.74, -74.29], "direccion": "Calle 35", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 6.6,
+    "costo": 16200,
+    "fechaInicio": "2025-11-26T16:00:00",
+    "fechaFin": "2025-11-26T16:21:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV036",
+    "usuarioCedula": "1000007",
+    "conductorCedula": "2000025",
+    "vehiculoPlaca": "V1000005B",
+    "puntos": [
+      { "coordenadas": [4.75, -74.30], "direccion": "Calle 36", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 4.5,
+    "costo": 11200,
+    "fechaInicio": "2025-11-27T08:00:00",
+    "fechaFin": "2025-11-27T08:15:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV037",
+    "usuarioCedula": "1000007",
+    "conductorCedula": "2000026",
+    "vehiculoPlaca": "V1000006B",
+    "puntos": [
+      { "coordenadas": [4.76, -74.31], "direccion": "Calle 37", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 8.9,
+    "costo": 20800,
+    "fechaInicio": "2025-11-27T10:00:00",
+    "fechaFin": "2025-11-27T10:28:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV038",
+    "usuarioCedula": "1000007",
+    "conductorCedula": "2000027",
+    "vehiculoPlaca": "V1000007B",
+    "puntos": [
+      { "coordenadas": [4.77, -74.32], "direccion": "Calle 38", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 11.3,
+    "costo": 25500,
+    "fechaInicio": "2025-11-27T12:00:00",
+    "fechaFin": "2025-11-27T12:40:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV039",
+    "usuarioCedula": "1000007",
+    "conductorCedula": "2000028",
+    "vehiculoPlaca": "V1000008B",
+    "puntos": [
+      { "coordenadas": [4.78, -74.33], "direccion": "Calle 39", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 3.1,
+    "costo": 7800,
+    "fechaInicio": "2025-11-27T14:00:00",
+    "fechaFin": "2025-11-27T14:11:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV040",
+    "usuarioCedula": "1000007",
+    "conductorCedula": "2000029",
+    "vehiculoPlaca": "V1000009B",
+    "puntos": [
+      { "coordenadas": [4.79, -74.34], "direccion": "Calle 40", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 6.1,
+    "costo": 15800,
+    "fechaInicio": "2025-11-27T16:00:00",
+    "fechaFin": "2025-11-27T16:20:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV041",
+    "usuarioCedula": "1000008",
+    "conductorCedula": "2000000",
+    "vehiculoPlaca": "V1000000B",
+    "puntos": [
+      { "coordenadas": [4.80, -74.20], "direccion": "Calle 41", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 4.7,
+    "costo": 11800,
+    "fechaInicio": "2025-11-28T08:00:00",
+    "fechaFin": "2025-11-28T08:16:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV042",
+    "usuarioCedula": "1000008",
+    "conductorCedula": "2000001",
+    "vehiculoPlaca": "V1000001B",
+    "puntos": [
+      { "coordenadas": [4.81, -74.21], "direccion": "Calle 42", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 7.1,
+    "costo": 17200,
+    "fechaInicio": "2025-11-28T10:00:00",
+    "fechaFin": "2025-11-28T10:23:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV043",
+    "usuarioCedula": "1000008",
+    "conductorCedula": "2000002",
+    "vehiculoPlaca": "V1000002B",
+    "puntos": [
+      { "coordenadas": [4.82, -74.22], "direccion": "Calle 43", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 9.4,
+    "costo": 22000,
+    "fechaInicio": "2025-11-28T12:00:00",
+    "fechaFin": "2025-11-28T12:33:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV044",
+    "usuarioCedula": "1000008",
+    "conductorCedula": "2000003",
+    "vehiculoPlaca": "V1000003B",
+    "puntos": [
+      { "coordenadas": [4.83, -74.23], "direccion": "Calle 44", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 3.4,
+    "costo": 8700,
+    "fechaInicio": "2025-11-28T14:00:00",
+    "fechaFin": "2025-11-28T14:12:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV045",
+    "usuarioCedula": "1000008",
+    "conductorCedula": "2000004",
+    "vehiculoPlaca": "V1000004B",
+    "puntos": [
+      { "coordenadas": [4.84, -74.24], "direccion": "Calle 45", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 6.1,
+    "costo": 15800,
+    "fechaInicio": "2025-11-28T16:00:00",
+    "fechaFin": "2025-11-28T16:20:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV046",
+    "usuarioCedula": "1000009",
+    "conductorCedula": "2000005",
+    "vehiculoPlaca": "V1000005B",
+    "puntos": [
+      { "coordenadas": [4.85, -74.25], "direccion": "Calle 46", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 4.2,
+    "costo": 10800,
+    "fechaInicio": "2025-11-29T08:00:00",
+    "fechaFin": "2025-11-29T08:14:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV047",
+    "usuarioCedula": "1000009",
+    "conductorCedula": "2000006",
+    "vehiculoPlaca": "V1000006B",
+    "puntos": [
+      { "coordenadas": [4.86, -74.26], "direccion": "Calle 47", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 7.5,
+    "costo": 18200,
+    "fechaInicio": "2025-11-29T10:00:00",
+    "fechaFin": "2025-11-29T10:25:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV048",
+    "usuarioCedula": "1000009",
+    "conductorCedula": "2000007",
+    "vehiculoPlaca": "V1000007B",
+    "puntos": [
+      { "coordenadas": [4.87, -74.27], "direccion": "Calle 48", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 10.7,
+    "costo": 24800,
+    "fechaInicio": "2025-11-29T12:00:00",
+    "fechaFin": "2025-11-29T12:38:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV049",
+    "usuarioCedula": "1000009",
+    "conductorCedula": "2000008",
+    "vehiculoPlaca": "V1000008B",
+    "puntos": [
+      { "coordenadas": [4.88, -74.28], "direccion": "Calle 49", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 3.3,
+    "costo": 8200,
+    "fechaInicio": "2025-11-29T14:00:00",
+    "fechaFin": "2025-11-29T14:11:00",
+    "reseÃ±as": []
+  },
+  {
+    "id": "SERV050",
+    "usuarioCedula": "1000009",
+    "conductorCedula": "2000009",
+    "vehiculoPlaca": "V1000009B",
+    "puntos": [
+      { "coordenadas": [4.89, -74.29], "direccion": "Calle 50", "ciudad": "BOGOTA" }
+    ],
+    "distancia": 6.8,
+    "costo": 17200,
+    "fechaInicio": "2025-11-29T16:00:00",
+    "fechaFin": "2025-11-29T16:22:00",
+    "reseÃ±as": []
+  }
+
+
+
+]

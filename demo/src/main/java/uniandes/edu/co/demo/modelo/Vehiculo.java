@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Document(collection = "vehiculos")
@@ -15,7 +16,8 @@ public class Vehiculo {
     private int capacidad;
     
     @Data
-    public class Disponibilidad {
+    @NoArgsConstructor
+    public static class Disponibilidad {
         private String dia, horaInicio, horaFin, tipoServicio;
     }
     private List<Disponibilidad> disponibilidadesFijas = new ArrayList<>();

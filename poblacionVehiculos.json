@@ -1,0 +1,443 @@
+[{
+  "_id": {
+    "$oid": "692e7bc3130abab083c5f262"
+  },
+  "placa": "V1000000A",
+  "conductorCedula": "1000000",
+  "tipo": "carro",
+  "marca": "Toyota",
+  "modelo": "Corolla",
+  "color": "Blanco",
+  "ciudadPlaca": "BOGOTA",
+  "capacidad": 4,
+  "tipoServicio": "PASAJEROS",
+  "nivel": "ESTANDAR",
+  "disponibilidadesFijas": [
+    {
+      "dia": "LUNES",
+      "horaInicio": "08:00",
+      "horaFin": "18:00"
+    },
+    {
+      "dia": "MARTES",
+      "horaInicio": "08:00",
+      "horaFin": "18:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bc3130abab083c5f263"
+  },
+  "placa": "V1000000B",
+  "conductorCedula": "1000000",
+  "tipo": "camioneta",
+  "marca": "Mazda",
+  "modelo": "CX5",
+  "color": "Negro",
+  "ciudadPlaca": "BOGOTA",
+  "capacidad": 5,
+  "tipoServicio": "MERCANCIA",
+  "nivel": "LARGE",
+  "disponibilidadesFijas": [
+    {
+      "dia": "MIERCOLES",
+      "horaInicio": "09:00",
+      "horaFin": "17:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bc3130abab083c5f264"
+  },
+  "placa": "V1000001A",
+  "conductorCedula": "1000001",
+  "tipo": "motocicleta",
+  "marca": "Honda",
+  "modelo": "CB190R",
+  "color": "Rojo",
+  "ciudadPlaca": "MEDELLIN",
+  "capacidad": 1,
+  "tipoServicio": "COMIDA",
+  "nivel": "ESTANDAR",
+  "disponibilidadesFijas": [
+    {
+      "dia": "LUNES",
+      "horaInicio": "10:00",
+      "horaFin": "20:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bc3130abab083c5f265"
+  },
+  "placa": "V1000001B",
+  "conductorCedula": "1000001",
+  "tipo": "carro",
+  "marca": "Renault",
+  "modelo": "Logan",
+  "color": "Gris",
+  "ciudadPlaca": "MEDELLIN",
+  "capacidad": 4,
+  "tipoServicio": "PASAJEROS",
+  "nivel": "ESTANDAR",
+  "disponibilidadesFijas": [
+    {
+      "dia": "JUEVES",
+      "horaInicio": "07:00",
+      "horaFin": "19:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bc3130abab083c5f266"
+  },
+  "placa": "V1000002A",
+  "conductorCedula": "1000002",
+  "tipo": "camioneta",
+  "marca": "Ford",
+  "modelo": "Ranger",
+  "color": "Azul",
+  "ciudadPlaca": "CALI",
+  "capacidad": 5,
+  "tipoServicio": "MERCANCIA",
+  "nivel": "LARGE",
+  "disponibilidadesFijas": [
+    {
+      "dia": "VIERNES",
+      "horaInicio": "08:00",
+      "horaFin": "16:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bc3130abab083c5f267"
+  },
+  "placa": "V1000002B",
+  "conductorCedula": "1000002",
+  "tipo": "carro",
+  "marca": "Chevrolet",
+  "modelo": "Onix",
+  "color": "Plata",
+  "ciudadPlaca": "CALI",
+  "capacidad": 4,
+  "tipoServicio": "PASAJEROS",
+  "nivel": "CONFORT",
+  "disponibilidadesFijas": [
+    {
+      "dia": "SABADO",
+      "horaInicio": "09:00",
+      "horaFin": "21:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bc3130abab083c5f268"
+  },
+  "placa": "V1000009A",
+  "conductorCedula": "1000009",
+  "tipo": "carro",
+  "marca": "Hyundai",
+  "modelo": "Accent",
+  "color": "Blanco",
+  "ciudadPlaca": "BOGOTA",
+  "capacidad": 4,
+  "tipoServicio": "PASAJEROS",
+  "nivel": "ESTANDAR",
+  "disponibilidadesFijas": [
+    {
+      "dia": "DOMINGO",
+      "horaInicio": "10:00",
+      "horaFin": "18:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bc3130abab083c5f269"
+  },
+  "placa": "V1000009B",
+  "conductorCedula": "1000009",
+  "tipo": "motocicleta",
+  "marca": "Yamaha",
+  "modelo": "YZF-R15",
+  "color": "Negro",
+  "ciudadPlaca": "BOGOTA",
+  "capacidad": 1,
+  "tipoServicio": "COMIDA",
+  "nivel": "ESTANDAR",
+  "disponibilidadesFijas": [
+    {
+      "dia": "LUNES",
+      "horaInicio": "06:00",
+      "horaFin": "22:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bfb130abab083c5f26a"
+  },
+  "placa": "V1000003A",
+  "conductorCedula": "1000003",
+  "tipo": "camioneta",
+  "marca": "Toyota",
+  "modelo": "Corolla",
+  "capacidad": 4,
+  "tipoServicio": "PASAJEROS",
+  "nivel": "ESTANDAR",
+  "ciudadPlaca": "BOGOTA",
+  "disponibilidadesFijas": [
+    {
+      "dia": "LUNES",
+      "horaInicio": "08:00",
+      "horaFin": "18:00"
+    },
+    {
+      "dia": "MARTES",
+      "horaInicio": "09:00",
+      "horaFin": "17:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bfb130abab083c5f26b"
+  },
+  "placa": "V1000003B",
+  "conductorCedula": "1000003",
+  "tipo": "motocicleta",
+  "marca": "Honda",
+  "modelo": "CB500",
+  "capacidad": 1,
+  "tipoServicio": "COMIDA",
+  "nivel": "ESTANDAR",
+  "ciudadPlaca": "BOGOTA",
+  "disponibilidadesFijas": [
+    {
+      "dia": "MIERCOLES",
+      "horaInicio": "07:00",
+      "horaFin": "15:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bfb130abab083c5f26c"
+  },
+  "placa": "V1000004A",
+  "conductorCedula": "1000004",
+  "tipo": "camioneta",
+  "marca": "Ford",
+  "modelo": "F-150",
+  "capacidad": 5,
+  "tipoServicio": "MERCANCIA",
+  "nivel": "LARGE",
+  "ciudadPlaca": "MEDELLIN",
+  "disponibilidadesFijas": [
+    {
+      "dia": "JUEVES",
+      "horaInicio": "08:30",
+      "horaFin": "18:30"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bfb130abab083c5f26d"
+  },
+  "placa": "V1000004B",
+  "conductorCedula": "1000004",
+  "tipo": "carro",
+  "marca": "Mazda",
+  "modelo": "CX-5",
+  "capacidad": 4,
+  "tipoServicio": "PASAJEROS",
+  "nivel": "CONFORT",
+  "ciudadPlaca": "MEDELLIN",
+  "disponibilidadesFijas": [
+    {
+      "dia": "VIERNES",
+      "horaInicio": "09:00",
+      "horaFin": "19:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bfb130abab083c5f26e"
+  },
+  "placa": "V1000005A",
+  "conductorCedula": "1000005",
+  "tipo": "carro",
+  "marca": "Chevrolet",
+  "modelo": "Cruze",
+  "capacidad": 4,
+  "tipoServicio": "PASAJEROS",
+  "nivel": "ESTANDAR",
+  "ciudadPlaca": "CALI",
+  "disponibilidadesFijas": [
+    {
+      "dia": "SABADO",
+      "horaInicio": "07:00",
+      "horaFin": "17:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7bfb130abab083c5f26f"
+  },
+  "placa": "V1000005B",
+  "conductorCedula": "1000005",
+  "tipo": "motocicleta",
+  "marca": "Yamaha",
+  "modelo": "MT-07",
+  "capacidad": 1,
+  "tipoServicio": "COMIDA",
+  "nivel": "ESTANDAR",
+  "ciudadPlaca": "CALI",
+  "disponibilidadesFijas": [
+    {
+      "dia": "DOMINGO",
+      "horaInicio": "08:00",
+      "horaFin": "16:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7c63130abab083c5f270"
+  },
+  "placa": "V1000006A",
+  "conductorCedula": "1000006",
+  "tipo": "carro",
+  "marca": "Nissan",
+  "modelo": "Sentra",
+  "capacidad": 4,
+  "tipoServicio": "PASAJEROS",
+  "nivel": "CONFORT",
+  "ciudadPlaca": "MEDELLIN",
+  "disponibilidadesFijas": [
+    {
+      "dia": "LUNES",
+      "horaInicio": "08:00",
+      "horaFin": "18:00"
+    },
+    {
+      "dia": "MARTES",
+      "horaInicio": "09:00",
+      "horaFin": "17:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7c63130abab083c5f271"
+  },
+  "placa": "V1000006B",
+  "conductorCedula": "1000006",
+  "tipo": "motocicleta",
+  "marca": "Suzuki",
+  "modelo": "GSX-R750",
+  "capacidad": 1,
+  "tipoServicio": "COMIDA",
+  "nivel": "ESTANDAR",
+  "ciudadPlaca": "MEDELLIN",
+  "disponibilidadesFijas": [
+    {
+      "dia": "MIERCOLES",
+      "horaInicio": "07:00",
+      "horaFin": "15:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7c63130abab083c5f272"
+  },
+  "placa": "V1000007A",
+  "conductorCedula": "1000007",
+  "tipo": "camioneta",
+  "marca": "Chevrolet",
+  "modelo": "Silverado",
+  "capacidad": 5,
+  "tipoServicio": "MERCANCIA",
+  "nivel": "LARGE",
+  "ciudadPlaca": "BOGOTA",
+  "disponibilidadesFijas": [
+    {
+      "dia": "JUEVES",
+      "horaInicio": "08:30",
+      "horaFin": "18:30"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7c63130abab083c5f273"
+  },
+  "placa": "V1000007B",
+  "conductorCedula": "1000007",
+  "tipo": "carro",
+  "marca": "Kia",
+  "modelo": "Rio",
+  "capacidad": 4,
+  "tipoServicio": "PASAJEROS",
+  "nivel": "ESTANDAR",
+  "ciudadPlaca": "BOGOTA",
+  "disponibilidadesFijas": [
+    {
+      "dia": "VIERNES",
+      "horaInicio": "09:00",
+      "horaFin": "19:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7c63130abab083c5f274"
+  },
+  "placa": "V1000008A",
+  "conductorCedula": "1000008",
+  "tipo": "carro",
+  "marca": "Hyundai",
+  "modelo": "Elantra",
+  "capacidad": 4,
+  "tipoServicio": "PASAJEROS",
+  "nivel": "CONFORT",
+  "ciudadPlaca": "CALI",
+  "disponibilidadesFijas": [
+    {
+      "dia": "SABADO",
+      "horaInicio": "07:00",
+      "horaFin": "17:00"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "692e7c63130abab083c5f275"
+  },
+  "placa": "V1000008B",
+  "conductorCedula": "1000008",
+  "tipo": "motocicleta",
+  "marca": "Ducati",
+  "modelo": "Monster",
+  "capacidad": 1,
+  "tipoServicio": "COMIDA",
+  "nivel": "ESTANDAR",
+  "ciudadPlaca": "CALI",
+  "disponibilidadesFijas": [
+    {
+      "dia": "DOMINGO",
+      "horaInicio": "08:00",
+      "horaFin": "16:00"
+    }
+  ]
+}]

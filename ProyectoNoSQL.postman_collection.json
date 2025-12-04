@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "e6962100-d8c4-467c-8555-a8b519077669",
+		"name": "ProyectoNoSQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47489783",
+		"_collection_link": "https://japal-knight-4421565.postman.co/workspace/MobMako's-Workspace~816b3d07-8735-4ade-82e3-0f968f8a7c78/collection/47489783-e6962100-d8c4-467c-8555-a8b519077669?action=share&source=collection_link&creator=47489783"
+	},
+	"item": [
+		{
+			"name": "RF1 test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cedula\": \"1000010\",\r\n  \"nombre\": \"Prueba RF1\",\r\n  \"email\": \"prueba1@email.com\", \r\n  \"celular\": \"+573001234567\",\r\n  \"tarjeta\": {\r\n    \"numero\": \"4000000000000010\",\r\n    \"nombreTarjeta\": \"PRUEBA RF1\", \r\n    \"vencimiento\": \"12/28\",\r\n    \"codigoSeguridad\": \"999\"\r\n  }\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios-servicio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios-servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF2 test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cedula\": \"2000010\", \r\n  \"nombre\": \"Conductor Prueba\",\r\n  \"email\": \"conductor1@email.com\",\r\n  \"celular\": \"+573009876543\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios-conductor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios-conductor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF3 test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"placa\": \"V200000A\",\r\n  \"tipo\": \"carro\",\r\n  \"marca\": \"Toyota\",\r\n  \"modelo\": \"Corolla\",\r\n  \"color\": \"Blanco\",\r\n  \"capacidad\": 4,\r\n  \"tipoServicio\": \"PASAJEROS\",\r\n  \"nivel\": \"ESTANDAR\",\r\n  \"ciudadPlaca\": \"BOGOTA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/vehiculos/2000010",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehiculos",
+						"2000010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF4 test",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"dia\": \"LUNES\",\r\n    \"horaInicio\": \"08:00\", \r\n    \"horaFin\": \"18:00\"\r\n  },\r\n\r\n  {\r\n    \"dia\": \"MARTES\",\r\n    \"horaInicio\": \"08:00\", \r\n    \"horaFin\": \"18:00\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/vehiculos/V200000A/disponibilidades",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehiculos",
+						"V200000A",
+						"disponibilidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF5 test",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dia\": \"MIERCOLES\",\r\n  \"horaInicio\": \"07:00\",\r\n  \"horaFin\": \"19:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/vehiculos/V200000A/disponibilidades/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehiculos",
+						"V200000A",
+						"disponibilidades",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RF6 test",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "RF7 test",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "RFC1 test",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "RFC2 test",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "RFC3 test",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

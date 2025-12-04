@@ -1,7 +1,6 @@
 package uniandes.edu.co.demo.modelo;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.Data;
 
@@ -11,7 +10,6 @@ public class UsuarioServicio {
     @Id private String id;
     private String cedula, nombre, email, celular;
 
-    @DBRef(lazy = true)
     private Tarjeta tarjeta;
 
     @Data

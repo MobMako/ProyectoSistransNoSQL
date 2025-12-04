@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "692e77a2130abab083c5f24e"
+  },
+  "cedula": "1000000",
+  "nombre": "Usuario0",
+  "email": "usuario0@email.com",
+  "celular": "+573000000000",
+  "tarjeta": {
+    "numero": "4000000000000000",
+    "nombreTarjeta": "USUARIO0",
+    "vencimiento": "00/25",
+    "codigoSeguridad": "100"
+  }
+},
+{
+  "_id": {
+    "$oid": "692e77a2130abab083c5f24f"
+  },
+  "cedula": "1000001",
+  "nombre": "Usuario1",
+  "email": "usuario1@email.com",
+  "celular": "+573000000001",
+  "tarjeta": {
+    "numero": "4000000000000001",
+    "nombreTarjeta": "USUARIO1",
+    "vencimiento": "01/26",
+    "codigoSeguridad": "101"
+  }
+},
+{
+  "_id": {
+    "$oid": "692e77a2130abab083c5f250"
+  },
+  "cedula": "1000002",
+  "nombre": "Usuario2",
+  "email": "usuario2@email.com",
+  "celular": "+573000000002",
+  "tarjeta": {
+    "numero": "4000000000000002",
+    "nombreTarjeta": "USUARIO2",
+    "vencimiento": "02/27",
+    "codigoSeguridad": "102"
+  }
+},
+{
+  "_id": {
+    "$oid": "692e77a2130abab083c5f251"
+  },
+  "cedula": "1000003",
+  "nombre": "Usuario3",
+  "email": "usuario3@email.com",
+  "celular": "+573000000003",
+  "tarjeta": {
+    "numero": "4000000000000003",
+    "nombreTarjeta": "USUARIO3",
+    "vencimiento": "03/28",
+    "codigoSeguridad": "103"
+  }
+},
+{
+  "_id": {
+    "$oid": "692e77a2130abab083c5f252"
+  },
+  "cedula": "1000004",
+  "nombre": "Usuario4",
+  "email": "usuario4@email.com",
+  "celular": "+573000000004",
+  "tarjeta": {
+    "numero": "4000000000000004",
+    "nombreTarjeta": "USUARIO4",
+    "vencimiento": "04/29",
+    "codigoSeguridad": "104"
+  }
+},
+{
+  "_id": {
+    "$oid": "692e77a2130abab083c5f253"
+  },
+  "cedula": "1000005",
+  "nombre": "Usuario5",
+  "email": "usuario5@email.com",
+  "celular": "+573000000005",
+  "tarjeta": {
+    "numero": "4000000000000005",
+    "nombreTarjeta": "USUARIO5",
+    "vencimiento": "05/30",
+    "codigoSeguridad": "105"
+  }
+},
+{
+  "_id": {
+    "$oid": "692e77a2130abab083c5f254"
+  },
+  "cedula": "1000006",
+  "nombre": "Usuario6",
+  "email": "usuario6@email.com",
+  "celular": "+573000000006",
+  "tarjeta": {
+    "numero": "4000000000000006",
+    "nombreTarjeta": "USUARIO6",
+    "vencimiento": "06/31",
+    "codigoSeguridad": "106"
+  }
+},
+{
+  "_id": {
+    "$oid": "692e77a2130abab083c5f255"
+  },
+  "cedula": "1000007",
+  "nombre": "Usuario7",
+  "email": "usuario7@email.com",
+  "celular": "+573000000007",
+  "tarjeta": {
+    "numero": "4000000000000007",
+    "nombreTarjeta": "USUARIO7",
+    "vencimiento": "07/32",
+    "codigoSeguridad": "107"
+  }
+},
+{
+  "_id": {
+    "$oid": "692e77a2130abab083c5f256"
+  },
+  "cedula": "1000008",
+  "nombre": "Usuario8",
+  "email": "usuario8@email.com",
+  "celular": "+573000000008",
+  "tarjeta": {
+    "numero": "4000000000000008",
+    "nombreTarjeta": "USUARIO8",
+    "vencimiento": "08/33",
+    "codigoSeguridad": "108"
+  }
+},
+{
+  "_id": {
+    "$oid": "692e77a2130abab083c5f257"
+  },
+  "cedula": "1000009",
+  "nombre": "Usuario9",
+  "email": "usuario9@email.com",
+  "celular": "+573000000009",
+  "tarjeta": {
+    "numero": "4000000000000009",
+    "nombreTarjeta": "USUARIO9",
+    "vencimiento": "09/34",
+    "codigoSeguridad": "109"
+  }
+}]
