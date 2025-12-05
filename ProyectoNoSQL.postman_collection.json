@@ -34,7 +34,26 @@
 					]
 				}
 			},
-			"response": []
+			"response": [],
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify User Data\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.cedula).to.eql(\"1000010\");",
+							"    pm.expect(jsonData.nombre).to.eql(\"Prueba RF1\");",
+							"    pm.expect(jsonData.email).to.eql(\"prueba1@email.com\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			]
 		},
 		{
 			"name": "RF2 test",
@@ -63,7 +82,26 @@
 					]
 				}
 			},
-			"response": []
+			"response": [],
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify Conductor Data\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.cedula).to.eql(\"2000010\");",
+							"    pm.expect(jsonData.nombre).to.eql(\"Conductor Prueba\");",
+							"    pm.expect(jsonData.email).to.eql(\"conductor1@email.com\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			]
 		},
 		{
 			"name": "RF3 test",
@@ -93,7 +131,26 @@
 					]
 				}
 			},
-			"response": []
+			"response": [],
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify Vehicle Data\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.placa).to.eql(\"V200000A\");",
+							"    pm.expect(jsonData.marca).to.eql(\"Toyota\");",
+							"    pm.expect(jsonData.modelo).to.eql(\"Corolla\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			]
 		},
 		{
 			"name": "RF4 test",
@@ -124,7 +181,20 @@
 					]
 				}
 			},
-			"response": []
+			"response": [],
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			]
 		},
 		{
 			"name": "RF5 test",
@@ -156,47 +226,911 @@
 					]
 				}
 			},
-			"response": []
+			"response": [],
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			]
 		},
 		{
 			"name": "RF6 test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"pm.test(\"Verify Service Created\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.id).to.not.be.null;",
+							"    pm.expect(jsonData.costo).to.be.above(0);",
+							"    pm.expect(jsonData.distancia).to.be.above(0);",
+							"    pm.collectionVariables.set(\"servicioId\", jsonData.id);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"lat\": 4.6097,\r\n        \"lon\": -74.0817\r\n    },\r\n    {\r\n        \"lat\": 4.7110,\r\n        \"lon\": -74.0721\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios-servicio/1000010/servicios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios-servicio",
+						"1000010",
+						"servicios"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "RF7 test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify Service Finished\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.fechaFin).to.not.be.empty;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/servicios/{{servicioId}}/finalizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"servicios",
+						"{{servicioId}}",
+						"finalizar"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "RFC1 test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify List Response\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.be.an(\"array\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios-servicio/1000010/servicios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios-servicio",
+						"1000010",
+						"servicios"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "RFC2 test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify List Response\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.be.an(\"array\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/conductores/top-servicios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"conductores",
+						"top-servicios"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "RFC3 test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify List Response\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.be.an(\"array\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/servicios/utilizacion-ciudad?ciudad=BOGOTA&fechaInicio=2023-01-01&fechaFin=2025-12-31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"servicios",
+						"utilizacion-ciudad"
+					],
+					"query": [
+						{
+							"key": "ciudad",
+							"value": "BOGOTA"
+						},
+						{
+							"key": "fechaInicio",
+							"value": "2023-01-01"
+						},
+						{
+							"key": "fechaFin",
+							"value": "2025-12-31"
+						}
+					]
+				}
 			},
 			"response": []
+		},
+		{
+			"name": "Population Tests",
+			"item": [
+				{
+					"name": "Create User 1000000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201 or 200\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 200]);",
+									"});",
+									"pm.test(\"Verify User Data\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.cedula).to.eql(\"1000000\");",
+									"    pm.expect(jsonData.nombre).to.eql(\"Usuario0\");",
+									"    pm.expect(jsonData.email).to.eql(\"usuario0@email.com\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cedula\": \"1000000\",\r\n  \"nombre\": \"Usuario0\",\r\n  \"email\": \"usuario0@email.com\",\r\n  \"celular\": \"+573000000000\",\r\n  \"tarjeta\": {\r\n    \"numero\": \"4000000000000000\",\r\n    \"nombreTarjeta\": \"USUARIO0\",\r\n    \"vencimiento\": \"00/25\",\r\n    \"codigoSeguridad\": \"100\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuarios-servicio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios-servicio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Conductor 2000000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201 or 200\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 200]);",
+									"});",
+									"pm.test(\"Verify Conductor Data\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.cedula).to.eql(\"2000000\");",
+									"    pm.expect(jsonData.nombre).to.eql(\"Conductor0\");",
+									"    pm.expect(jsonData.email).to.eql(\"conductor0@email.com\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cedula\": \"2000000\",\r\n  \"nombre\": \"Conductor0\",\r\n  \"email\": \"conductor0@email.com\",\r\n  \"celular\": \"+573000000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuarios-conductor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios-conductor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Vehicle V1000000A",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201 or 200\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 200]);",
+									"});",
+									"pm.test(\"Verify Vehicle Data\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.placa).to.eql(\"V1000000A\");",
+									"    pm.expect(jsonData.marca).to.eql(\"Toyota\");",
+									"    pm.expect(jsonData.modelo).to.eql(\"Corolla\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"placa\": \"V1000000A\",\r\n  \"tipo\": \"carro\",\r\n  \"marca\": \"Toyota\",\r\n  \"modelo\": \"Corolla\",\r\n  \"color\": \"Blanco\",\r\n  \"capacidad\": 4,\r\n  \"tipoServicio\": \"PASAJEROS\",\r\n  \"nivel\": \"ESTANDAR\",\r\n  \"ciudadPlaca\": \"BOGOTA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehiculos/2000000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehiculos",
+								"2000000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Service SERV001",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Verify Service Created\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.id).to.not.be.null;",
+									"    pm.expect(jsonData.costo).to.be.above(0);",
+									"    pm.expect(jsonData.distancia).to.be.above(0);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    { \"lat\": 4.60, \"lon\": -74.08 },\r\n    { \"lat\": 4.61, \"lon\": -74.07 }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuarios-servicio/1000000/servicios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios-servicio",
+								"1000000",
+								"servicios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User 1000001",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201 or 200\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 200]);",
+									"});",
+									"pm.test(\"Verify User Data\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.cedula).to.eql(\"1000001\");",
+									"    pm.expect(jsonData.nombre).to.eql(\"Usuario1\");",
+									"    pm.expect(jsonData.email).to.eql(\"usuario1@email.com\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cedula\": \"1000001\",\r\n  \"nombre\": \"Usuario1\",\r\n  \"email\": \"usuario1@email.com\",\r\n  \"celular\": \"+573000000001\",\r\n  \"tarjeta\": {\r\n    \"numero\": \"4000000000000001\",\r\n    \"nombreTarjeta\": \"USUARIO1\",\r\n    \"vencimiento\": \"01/26\",\r\n    \"codigoSeguridad\": \"101\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuarios-servicio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios-servicio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Conductor 2000001",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201 or 200\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 200]);",
+									"});",
+									"pm.test(\"Verify Conductor Data\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.cedula).to.eql(\"2000001\");",
+									"    pm.expect(jsonData.nombre).to.eql(\"Conductor1\");",
+									"    pm.expect(jsonData.email).to.eql(\"conductor1@email.com\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cedula\": \"2000001\",\r\n  \"nombre\": \"Conductor1\",\r\n  \"email\": \"conductor1@email.com\",\r\n  \"celular\": \"+573000000001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuarios-conductor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios-conductor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Vehicle V1000001A",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201 or 200\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 200]);",
+									"});",
+									"pm.test(\"Verify Vehicle Data\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.placa).to.eql(\"V1000001A\");",
+									"    pm.expect(jsonData.marca).to.eql(\"Honda\");",
+									"    pm.expect(jsonData.modelo).to.eql(\"CB190R\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"placa\": \"V1000001A\",\r\n  \"tipo\": \"motocicleta\",\r\n  \"marca\": \"Honda\",\r\n  \"modelo\": \"CB190R\",\r\n  \"color\": \"Rojo\",\r\n  \"capacidad\": 1,\r\n  \"tipoServicio\": \"COMIDA\",\r\n  \"nivel\": \"ESTANDAR\",\r\n  \"ciudadPlaca\": \"MEDELLIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehiculos/2000001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehiculos",
+								"2000001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Service SERV002",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Verify Service Created\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.id).to.not.be.null;",
+									"    pm.expect(jsonData.costo).to.be.above(0);",
+									"    pm.expect(jsonData.distancia).to.be.above(0);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    { \"lat\": 4.61, \"lon\": -74.07 },\r\n    { \"lat\": 4.62, \"lon\": -74.06 }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuarios-servicio/1000001/servicios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios-servicio",
+								"1000001",
+								"servicios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User 1000002",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201 or 200\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 200]);",
+									"});",
+									"pm.test(\"Verify User Data\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.cedula).to.eql(\"1000002\");",
+									"    pm.expect(jsonData.nombre).to.eql(\"Usuario2\");",
+									"    pm.expect(jsonData.email).to.eql(\"usuario2@email.com\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cedula\": \"1000002\",\r\n  \"nombre\": \"Usuario2\",\r\n  \"email\": \"usuario2@email.com\",\r\n  \"celular\": \"+573000000002\",\r\n  \"tarjeta\": {\r\n    \"numero\": \"4000000000000002\",\r\n    \"nombreTarjeta\": \"USUARIO2\",\r\n    \"vencimiento\": \"02/27\",\r\n    \"codigoSeguridad\": \"102\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuarios-servicio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios-servicio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Conductor 2000002",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201 or 200\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 200]);",
+									"});",
+									"pm.test(\"Verify Conductor Data\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.cedula).to.eql(\"2000002\");",
+									"    pm.expect(jsonData.nombre).to.eql(\"Conductor2\");",
+									"    pm.expect(jsonData.email).to.eql(\"conductor2@email.com\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cedula\": \"2000002\",\r\n  \"nombre\": \"Conductor2\",\r\n  \"email\": \"conductor2@email.com\",\r\n  \"celular\": \"+573000000002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuarios-conductor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios-conductor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Vehicle V1000002A",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201 or 200\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 200]);",
+									"});",
+									"pm.test(\"Verify Vehicle Data\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.placa).to.eql(\"V1000002A\");",
+									"    pm.expect(jsonData.marca).to.eql(\"Ford\");",
+									"    pm.expect(jsonData.modelo).to.eql(\"Ranger\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"placa\": \"V1000002A\",\r\n  \"tipo\": \"camioneta\",\r\n  \"marca\": \"Ford\",\r\n  \"modelo\": \"Ranger\",\r\n  \"color\": \"Azul\",\r\n  \"capacidad\": 5,\r\n  \"tipoServicio\": \"MERCANCIA\",\r\n  \"nivel\": \"LARGE\",\r\n  \"ciudadPlaca\": \"CALI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/vehiculos/2000002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehiculos",
+								"2000002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Service SERV003",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Verify Service Created\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.id).to.not.be.null;",
+									"    pm.expect(jsonData.costo).to.be.above(0);",
+									"    pm.expect(jsonData.distancia).to.be.above(0);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    { \"lat\": 4.62, \"lon\": -74.06 },\r\n    { \"lat\": 4.63, \"lon\": -74.05 }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuarios-servicio/1000002/servicios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuarios-servicio",
+								"1000002",
+								"servicios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Stats RFC2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/conductores/top-servicios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"conductores",
+								"top-servicios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Stats RFC3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/servicios/utilizacion-ciudad?ciudad=BOGOTA&fechaInicio=2023-01-01&fechaFin=2025-12-31",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"servicios",
+								"utilizacion-ciudad"
+							],
+							"query": [
+								{
+									"key": "ciudad",
+									"value": "BOGOTA"
+								},
+								{
+									"key": "fechaInicio",
+									"value": "2023-01-01"
+								},
+								{
+									"key": "fechaFin",
+									"value": "2025-12-31"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
